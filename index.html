@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parham Momeni</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            padding: 70px 20px 30px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #ffde59;
+            text-shadow: 0 0 20px rgba(255,222,89,0.6);
+        }
+
+        header p {
+            opacity: 0.85;
+            margin-top: 10px;
+        }
+
+        /* نوار آیکون متحرک */
+        .icon-bar {
+            width: 100%;
+            overflow: hidden;
+            margin: 40px 0 60px;
+        }
+
+        .icon-track {
+            display: flex;
+            gap: 50px;
+            font-size: 2.8rem;
+            animation: moveIcons 18s linear infinite;
+            padding-left: 100%;
+        }
+
+        .icon-track span {
+            filter: drop-shadow(0 0 12px rgba(255, 222, 89, 0.7));
+        }
+
+        @keyframes moveIcons {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        section {
+            width: 90%;
+            max-width: 900px;
+            background: rgba(0,0,0,0.45);
+            padding: 30px 40px;
+            border-radius: 18px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+        }
+
+        section h2 {
+            color: #ffde59;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: right;
+        }
+
+        .projects ul {
+            list-style: none;
+            text-align: left;
+        }
+
+        .projects li {
+            margin: 14px 0;
+            font-size: 1.2rem;
+        }
+
+        .projects a {
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .projects a:hover {
+            color: #ffde59;
+            text-shadow: 0 0 10px rgba(255,222,89,0.6);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #bbb;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.1rem;
+            }
+
+            .icon-track {
+                font-size: 2.2rem;
+                gap: 35px;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            .projects li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Parham Momeni</h1>
+        <p>خوش آمدید به دنیای من</p>
+    </header>
+
+    <!-- نوار آیکون زنده -->
+    <div class="icon-bar">
+        <div class="icon-track">
+            <span>⚡</span>
+            <span>🎮</span>
+            <span>🔥</span>
+            <span>💻</span>
+            <span>⚡</span>
+            <span>🎮</span>
+            <span>🔥</span>
+            <span>💻</span>
+            <span>⚡</span>
+            <span>🎮</span>
+            <span>🔥</span>
+            <span>💻</span>
+            <span>⚡</span>
+            <span>🎮</span>
+            <span>🔥</span>
+            <span>💻</span>
+            <span>⚡</span>
+            <span>🎮</span>
+            <span>🔥</span>
+            <span>💻</span>
+        </div>
+    </div>
+
+    <!-- پروژه‌ها -->
+    <section class="projects">
+        <h2>: پروژه‌ها</h2>
+        <ul>
+            <li><a href="https://parhammomeni.ir/ai" target="_blank">Parham AI</a></li>
+            <li><a href="https://parhammomeni.ir/arena" target="_blank">Online Arena</a></li>
+            <li><a href="https://parhammomeni.ir/bedwars" target="_blank">Bedwars</a></li>
+            <li><a href="https://parhammomeni.ir/uno" target="_blank">Uno</a></li>
+        </ul>
+    </section>
+<footer>
+        © 2026 Parham Momeni — All Rights Reserved
+    </footer>
+
+</body>
+</html>
